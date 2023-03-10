@@ -6,15 +6,24 @@ Meme es un generador que Vox Media utiliza para crear imágenes de uso compartid
 
 ## ¿Qué hay de nuevo en la versión 2.0?
 • Refactorizado en una aplicación formal MV*.
+
 • Corrección de errores con el estado de representación y la repetición de arrastrar y soltar imágenes.
+
 • Mejora en la representación inicial con fuentes web cargadas.
+
 • Mejoras en las opciones de origen cruzado: tanto para imágenes base64 como para CORS.
+
 • Un editor altamente personalizable (¡y fácilmente!) y opciones de tema.
+
 • Selector de marca de agua.
+
 ## Instalación
 • `git clone https://github.com/voxmedia/meme.git`
+
 • `bundle install`
+
 • `bundle exec middleman`
+
 Esto iniciará un servidor web local en: `http://localhost:4567/`
 ## Personalización
 ### Configuración
@@ -31,9 +40,13 @@ Si está alojando esta aplicación en el mismo dominio que sirve sus imágenes, 
 2. Inserte todas sus imágenes de marca de agua como URI de datos base64 dentro del archivo `settings.js.erb`. El método helper de uri de datos del pipeline `asset_data_uri` de activos facilita esto, e incrusta efectivamente todos los datos de imagen dentro de su JavaScript. La desventaja aquí es que su JavaScript se convertirá en una carga útil muy grande a medida que incluya más imágenes. A largo plazo, la configuración de los encabezados CORS será una opción mejor.
 ## Ejemplos
 • http://www.sbnation.com/a/meme
+
 • https://twitter.com/voxdotcom/status/481671889094340608
+
 • https://twitter.com/voxdotcom/status/479228288221470721
+
 • https://twitter.com/voxdotcom/status/481619042545844225
+
 ## Contribuir
 1. Haz un fork ( https://github.com/voxmedia/meme/fork )
 2. Crea una nueva rama de características (`git checkout -b my-new-feature`)
